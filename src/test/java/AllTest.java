@@ -22,8 +22,11 @@ public class AllTest {
     }
 @Test
     public void cubeTest(){
-        int expectations  = -8;
+        int expectations  = 8;
         int output = Cube.cube(2);
         Assert.assertEquals(expectations, output);
+    System.out.println("All test working");
 }
+
+
 }

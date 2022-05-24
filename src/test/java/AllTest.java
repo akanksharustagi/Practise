@@ -27,6 +27,12 @@ public class AllTest {
         Assert.assertEquals(expectations, output);
     System.out.println("All test working");
 }
-
-
+@Test
+    public void divideTest(){
+        Assert.assertEquals(4, calculator.divide(8,2));
+}
+@Test (expected = RuntimeException.class, timeout = 200)
+    public void divideby0(){
+        Assert.assertEquals(0, calculator.divide(2,0));
+}
 }
